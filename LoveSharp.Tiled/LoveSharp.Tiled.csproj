@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>lovessharp-tiled.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>D:\Love2DCS_Dev\LoveSharp.Tiled\build_output\</OutputPath>
+    <DocumentationFile>D:\Love2DCS_Dev\LoveSharp.Tiled\build_output\LoveSharp.Tiled.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\TiledSharpSrc\Group.cs" Link="TiledSharpSrc\Group.cs" />
+    <Compile Include="..\TiledSharpSrc\ImageLayer.cs" Link="TiledSharpSrc\ImageLayer.cs" />
+    <Compile Include="..\TiledSharpSrc\ITmxLayer.cs" Link="TiledSharpSrc\ITmxLayer.cs" />
+    <Compile Include="..\TiledSharpSrc\Layer.cs" Link="TiledSharpSrc\Layer.cs" />
+    <Compile Include="..\TiledSharpSrc\Map.cs" Link="TiledSharpSrc\Map.cs" />
+    <Compile Include="..\TiledSharpSrc\ObjectGroup.cs" Link="TiledSharpSrc\ObjectGroup.cs" />
+    <Compile Include="..\TiledSharpSrc\TiledCore.cs" Link="TiledSharpSrc\TiledCore.cs" />
+    <Compile Include="..\TiledSharpSrc\Tileset.cs" Link="TiledSharpSrc\Tileset.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LoveSharp" Version="11.0.51" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TiledSharpSrc\" />
+  </ItemGroup>
+
+</Project>

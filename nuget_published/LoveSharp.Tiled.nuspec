@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+
+    <metadata>
+        <!-- Required elements-->
+        <id>LoveSharp.Tiled</id>
+        <version>1.0.0</version>
+        <description>Tiled for LoveSharp LÖVE </description>
+        <authors>endlesstravel</authors>
+
+        <!-- Optional elements -->
+        <title>LoveSharp.Tiled</title>
+        <projectUrl>https://github.com/endlesstravel/LoveSharp.Tiled</projectUrl>
+        <iconUrl>https://gitee.com/endlesstravel/LoveSharp.Tiled/raw/master/logo-x.png</iconUrl>
+
+        <releaseNotes>
+1.0.0 release
+        </releaseNotes>
+        <tags>LÖVE game-engine tiled LoveSharp</tags>
+
+        <dependencies>
+            <dependency id="LoveSharp" version="11.0.51" />
+        </dependencies>
+
+    </metadata>
+
+
+    <!-- Optional 'files' node -->
+    <files>
+
+        <!-- <file src="..\build_output\netstandard2.0\LoveSharp.Imgui.dll" target="lib\net461" />
+        <file src="..\build_output\LoveSharp.Imgui.xml" target="lib\net461" />  -->
+
+        <file src="..\build_output\netstandard2.0\LoveSharp.Tiled.dll" target="lib\netstandard2.0" />  <!-- dotcore 1.0 / net45 / Mono 4.6 / Unity 2018.1 -->
+        <file src="..\build_output\LoveSharp.Tiled.xml" target="lib\netstandard2.0" /> <!-- 注释文档 -->
+
+    </files>
+
+</package>
